@@ -6,10 +6,10 @@ xmin, ymin = -100, -50
 xmax, ymax = 100, 80
 
 # ---------- Input ----------
-x1 = int(input("Enter x1: "))
-y1 = int(input("Enter y1: "))
-x2 = int(input("Enter x2: "))
-y2 = int(input("Enter y2: "))
+x1 = -200
+y1 = -300
+x2 = 200
+y2=200
 
 ox1, oy1 = x1, y1
 ox2, oy2 = x2, y2
@@ -45,6 +45,7 @@ for _ in range(2):
     w.left(90)
     w.forward(ymax-ymin)
     w.left(90)
+    time.sleep(1)
 
 # Original line
 o = turtle.Turtle()

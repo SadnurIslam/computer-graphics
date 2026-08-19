@@ -33,15 +33,15 @@ axis.write("Y")
 
 # ---------------- Drawing Turtle ----------------
 t = turtle.Turtle()
-t.hideturtle()
+# t.hideturtle()
 t.speed(0)
 t.penup()
 
 # ---------------- Input ----------------
-x1 = int(input("Enter x1: "))
-y1 = int(input("Enter y1: "))
-x2 = int(input("Enter x2: "))
-y2 = int(input("Enter y2: "))
+x1 = -200
+y1 = 200
+x2 = 300
+y2 = -100
 
 # Reference (ideal) line
 ref = turtle.Turtle()
@@ -50,8 +50,13 @@ ref.speed(0)
 ref.color("lightgray")
 ref.penup()
 ref.goto(x1, y1)
+ref.color("red")
+
+ref.write("A")
+ref.color("black")
 ref.pendown()
 ref.goto(x2, y2)
+ref.write("B")
 
 # ---------------- Bresenham Algorithm ----------------
 dx = abs(x2 - x1)
@@ -103,3 +108,4 @@ else:
             p += 2 * (dx - dy)
 
 turtle.done()
+

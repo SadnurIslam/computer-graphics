@@ -39,10 +39,10 @@ t.speed(0)
 t.penup()
 
 # Input
-x1 = int(input("Enter x1: "))
-y1 = int(input("Enter y1: "))
-x2 = int(input("Enter x2: "))
-y2 = int(input("Enter y2: "))
+x1 = 200
+y1 = -200
+x2 = 0
+y2 = 500
 
 # Draw ideal line (reference)
 ref = turtle.Turtle()

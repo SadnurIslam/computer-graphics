@@ -14,13 +14,14 @@ axis.hideturtle()
 axis.speed(0)
 axis.color("gray")
 
-# X-axis
+
+# # X-axis
 axis.penup()
 axis.goto(-300, 0)
 axis.pendown()
 axis.goto(300, 0)
 
-# Y-axis
+# # Y-axis
 axis.penup()
 axis.goto(0, -300)
 axis.pendown()
@@ -42,8 +43,11 @@ t.pensize(2)
 triangle = [(50, 50), (150, 50), (100, 150)]
 
 # Translation vector
-tx = int(input("Enter tx: "))
-ty = int(input("Enter ty: "))
+# tx = int(input("Enter tx: "))
+# ty = int(input("Enter ty: "))
+
+tx = 30
+ty = 20
 
 # Draw polygon
 def draw(poly, color):
@@ -56,6 +60,7 @@ def draw(poly, color):
         t.goto(p)
 
     t.goto(poly[0])
+
 
 # ---------- Animation ----------
 steps = 50
